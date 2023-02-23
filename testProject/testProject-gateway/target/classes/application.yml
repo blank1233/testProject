@@ -1,0 +1,22 @@
+server:
+  port: 7000
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: test_route
+          uri: lb://test
+          order: 1
+          predicates:
+            - Path=/gateway-test/**
+          filters:
+            - StripPrefix=1
+            - PreserveHostHeader

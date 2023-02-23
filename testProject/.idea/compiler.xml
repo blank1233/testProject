@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="test-server" />
+        <module name="common-log" />
+        <module name="testProject-server-admin" />
+        <module name="common-orm" />
+        <module name="common-redis" />
+        <module name="auth-server" />
+        <module name="common-security" />
+        <module name="testProject-gateway" />
+        <module name="auth-api" />
+        <module name="testProject-system" />
+        <module name="test-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-api" options="" />
+      <module name="auth-server" options="" />
+      <module name="testProject-common" options="" />
+      <module name="testProject-server-admin" options="" />
+      <module name="testProject-system" options="" />
+    </option>
+  </component>
+</project>
